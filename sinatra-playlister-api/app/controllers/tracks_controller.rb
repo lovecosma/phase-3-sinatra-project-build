@@ -32,6 +32,13 @@ class TracksController < ApplicationController
     end 
 
 
+    delete "/tracks/:id" do 
+        track = Track.find(params[:id])
+        track.delete
+
+    end 
+
+
 
 
 end 
